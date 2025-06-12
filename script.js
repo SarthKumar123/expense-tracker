@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
     const expenseAmount = document.getElementById("expense-amount");
@@ -5,6 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const expenseCategory = document.getElementById("expense-category");
     const addExpenseButton = document.getElementById("add-expense");
     const expenseList = document.getElementById("expense-list");
+=======
+const expenseAmount = document.getElementById('amount');
+const expenseName = document.getElementById('description');
+const expenseCategory = document.getElementById('category');
+const addExpenseButton = document.getElementById('add-expense');
+const expenseList = document.getElementById('expenses');
+
+>>>>>>> bf07847e2022b1f008b8ca137b477c89bea24163
 
     addExpenseButton.addEventListener("click", () => {
         const amount = expenseAmount.value;
