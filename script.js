@@ -1,8 +1,9 @@
-const expenseAmount = document.getElementById('expense-amount');
-const expenseName = document.getElementById('expense-name');
-const expenseCategory = document.getElementById('expense-category');
+const expenseAmount = document.getElementById('amount');
+const expenseName = document.getElementById('description');
+const expenseCategory = document.getElementById('category');
 const addExpenseButton = document.getElementById('add-expense');
-const expenseList = document.getElementById('expense-list');
+const expenseList = document.getElementById('expenses');
+
 
 addExpenseButton.addEventListener('click', () => {
     const amount = expenseAmount.value;
