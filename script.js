@@ -13,7 +13,7 @@ addExpenseButton.addEventListener('click', () => {
     if (amount && name && category) {
         const expenseItem = document.createElement('div');
         const expenseText = document.createElement('span');
-        expenseText.textContent = `${name} (${category}) - $${amount}`;
+        expenseText.textContent = `${name} (${category}) - ${amount}`;
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
