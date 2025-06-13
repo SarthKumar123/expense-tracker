@@ -34,7 +34,7 @@ addExpenseButton.addEventListener('click', () => {
         expenseItem.appendChild(deleteButton);
         expenseList.appendChild(expenseItem);
 
-        // Clear the inputs
+        // Clear inputs
         expenseAmount.value = '';
         expenseName.value = '';
         expenseCategory.value = 'Food';
