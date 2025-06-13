@@ -4,16 +4,15 @@ const expenseCategory = document.getElementById('category');
 const addExpenseButton = document.getElementById('add-expense');
 const expenseList = document.getElementById('expenses');
 
-
 addExpenseButton.addEventListener('click', () => {
-    const amount = expenseAmount.value;
-    const name = expenseName.value;
+    const amount = expenseAmount.value.trim();
+    const name = expenseName.value.trim();
     const category = expenseCategory.value;
 
     if (amount && name && category) {
         const expenseItem = document.createElement('div');
         const expenseText = document.createElement('span');
-        expenseText.textContent = `${name} (${category}) - ${amount}`;
+        expenseText.textContent = `${name} (${category}) - ₹${amount}`;
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
@@ -35,7 +34,6 @@ addExpenseButton.addEventListener('click', () => {
         expenseItem.appendChild(deleteButton);
         expenseList.appendChild(expenseItem);
 
-        // Clear the inputs
         expenseAmount.value = '';
         expenseName.value = '';
         expenseCategory.value = 'Food';
