@@ -4,6 +4,7 @@ const expenseCategory = document.getElementById('category');
 const addExpenseButton = document.getElementById('add-expense');
 const expenseList = document.getElementById('expenses');
 
+
 addExpenseButton.addEventListener('click', () => {
     const amount = expenseAmount.value;
     const name = expenseName.value;
@@ -34,7 +35,7 @@ addExpenseButton.addEventListener('click', () => {
         expenseItem.appendChild(deleteButton);
         expenseList.appendChild(expenseItem);
 
-        // Clear inputs
+        // Clear the inputs
         expenseAmount.value = '';
         expenseName.value = '';
         expenseCategory.value = 'Food';
