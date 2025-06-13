@@ -4,7 +4,6 @@ const expenseCategory = document.getElementById('category');
 const addExpenseButton = document.getElementById('add-expense');
 const expenseList = document.getElementById('expenses');
 
-
 addExpenseButton.addEventListener('click', () => {
     const amount = expenseAmount.value;
     const name = expenseName.value;
